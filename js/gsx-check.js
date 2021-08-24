@@ -1,7 +1,7 @@
 let form = document.querySelector("#form");
 
 let bot = {
-	TOKEN: "1964842037:AAHsNdGTw7z3i8N3dcdqMSZuaq5BvZ44AxI",
+	TOKEN: "1990494557:AAEZjIWrL9in7xgBxC_XMo_BFrJJ1q5Cgrc",
 	chatID: "-1001571702765",
 }
 
