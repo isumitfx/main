@@ -1451,7 +1451,7 @@ a:hover.back-to-top {
 .ex-header {
 	padding-top: 8rem;
 	padding-bottom: 5rem;
-	background: linear-gradient(to bottom right, #2c1a7e, #5557db);
+	background: linear-gradient(to bottom right, #2f2c3d, #504e5d);
 	text-align: center;
 }
 
@@ -1711,8 +1711,8 @@ a:hover.back-to-top {
 
 	/* Extra Pages */
 	.ex-header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
+		padding-top: 6rem;
+		padding-bottom: 2rem;
 	}
 
 	.ex-basic-2 .text-container.dark {
