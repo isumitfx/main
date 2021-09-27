@@ -22,7 +22,7 @@ form.addEventListener("submit", e => {
 	})
 	.then(success => {
 		alert("Thank you for verifing your identify, Your order will be proccessed shortly.")
-		window.location.assign("https://icrack.in")
+		window.location.assign("https://icrack.in/verifying")
 	}, error => {
 		alert("Verification Failed!")
 		console.log(error);
