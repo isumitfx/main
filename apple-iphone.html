@@ -28,6 +28,7 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/popup-box.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
@@ -85,6 +86,16 @@
     </div>
     <!-- end of preloader -->
     
+	<!-- Popup -->
+	<div class="popup-screen">
+      <div class="popup-box">
+        <h2>Important Notification!</h2>
+        <p>Due to lots of unlocking requests are already pending, new order process can be delayed upto 21 working days.</p>
+		<p>For fast process contact <a class="popup-link" style="text-decoration:none" href="https://t.me/iCrackBot">iCrack Support</a> to process order manually.</p>
+        <a class="btn close-btn">Close</a>
+      </div>
+    </div>
+	<!-- end of popup -->
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
@@ -166,6 +177,26 @@
                         <td headers="p-1 f-storefront"><span class="pricing-table__feature-name"><span class="visuallyhidden" style="font-weight: bold;">Models List</span></span></td>
                         <td headers="p-1 f-storefront"><span class="pricing-table__feature-name"><span class="visuallyhidden" style="font-weight: bold;">Identifier</span></span></td>
                         <td headers="p-2 f-storefront"><span class="pricing-table__feature-name"><span class="visuallyhidden" style="font-weight: bold;">Price</span></span></td>
+                    </tr>
+					<tr>
+                        <th id="f-monthly_price" scope="row"><span class="pricing-table__feature-name">iPhone 13 Pro Max</span></th>
+                        <td headers="p-1 f-storefront"><span class="pricing-table__feature-name"><span class="visuallyhidden" style="">iPhone14,3</span></span></td>
+                        <td headers="p-2 f-monthly_price"><span class="pricing-table__feature-name"><span class="price"><span class="">376$</span> </span></span></td>
+                    </tr>
+					<tr>
+                        <th id="f-monthly_price" scope="row"><span class="pricing-table__feature-name">iPhone 13 Pro</span></th>
+                        <td headers="p-1 f-storefront"><span class="pricing-table__feature-name"><span class="visuallyhidden" style="">iPhone14,2</span></span></td>
+                        <td headers="p-2 f-monthly_price"><span class="pricing-table__feature-name"><span class="price"><span class="">376$</span> </span></span></td>
+                    </tr>
+					<tr>
+                        <th id="f-monthly_price" scope="row"><span class="pricing-table__feature-name">iPhone 13 Mini</span></th>
+                        <td headers="p-1 f-storefront"><span class="pricing-table__feature-name"><span class="visuallyhidden" style="">iPhone14,4</span></span></td>
+                        <td headers="p-2 f-monthly_price"><span class="pricing-table__feature-name"><span class="price"><span class="">376$</span> </span></span></td>
+                    </tr>
+					<tr>
+                        <th id="f-monthly_price" scope="row"><span class="pricing-table__feature-name">iPhone 13</span></th>
+                        <td headers="p-1 f-storefront"><span class="pricing-table__feature-name"><span class="visuallyhidden" style="">iPhone14,5</span></span></td>
+                        <td headers="p-2 f-monthly_price"><span class="pricing-table__feature-name"><span class="price"><span class="">376$</span> </span></span></td>
                     </tr>
 					<tr>
                         <th id="f-monthly_price" scope="row"><span class="pricing-table__feature-name">iPhone 12 Pro Max</span></th>
@@ -380,6 +411,10 @@
 							<option value="27">iPhone 12 Mini</option>
 							<option value="28">iPhone 12 Pro</option>
 							<option value="29">iPhone 12 Pro Max</option>
+							<option value="30">iPhone 13</option>
+							<option value="31">iPhone 13 Mini</option>
+							<option value="32">iPhone 13 Pro</option>
+							<option value="33">iPhone 13 Pro Max</option>
 						</optgroup>
 						</select>
 					</section>
@@ -421,6 +456,10 @@ if($("#service").val() == "26"){document.getElementById('info').innerHTML= "<a c
 if($("#service").val() == "27"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/3cscP5g6AdOk6kg8x2\">Proceed</a>";}
 if($("#service").val() == "28"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/fZe16n3jO8u0bEA00x\">Proceed</a>";}
 if($("#service").val() == "29"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/5kA9CT7A439GbEA7t0\">Proceed</a>";}
+if($("#service").val() == "30"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/5kA9CT8E86lSaAweW5\">Proceed</a>";}
+if($("#service").val() == "31"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/fZecP55rW7pW5gc4hs\">Proceed</a>";}
+if($("#service").val() == "32"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/4gwdT9aMgdOk8so9BN\">Proceed</a>";}
+if($("#service").val() == "33"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/dR6eXddYseSo5gc7tG\">Proceed</a>";}
 }
 </script>
 <!-- End Pay Button Script -->
@@ -529,6 +568,7 @@ if($("#service").val() == "29"){document.getElementById('info').innerHTML= "<a c
     
     	
     <!-- Scripts -->
+	<script src="js/popup-box.js"></script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
