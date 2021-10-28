@@ -227,40 +227,6 @@
 						<h6>DURATION : WITHIN 24 WORKING HOURS - 7 WORKING DAYS (MONDAY - SATURDAY).</h6>
                         <h6>IMPORTANT : PLEASE READ <a class="turquoise" style="text-decoration:none" href="terms-conditions.html">TERMS OF AGREEMENT</a> AND <a class="turquoise" style="text-decoration:none" href="refund-policy.html">REFUND POLICY</a> BEFORE MAKING ORDER.
 					</div> <!-- end of text-container -->
-					<center><div class="select-box">
-					<section class="main">
-						<p><input type="text" id="imei" name="imei" autocomplete="off" maxlength="50" placeholder="Write Here IMEI or Serial No." style="width: 400px; border: 0px ; margin: 0 auto; text-align: center;"></p>
-						<select name="service" id="service" onchange='check();'>
-						<option value="0" selected="selected">Choose Device Model</option>
-						<optgroup label="Apple Watch">
-							<option value="1">Apple Watch</option>
-							<option value="2">Apple Watch Series 1</option>
-							<option value="3">Apple Watch Series 2</option>
-							<option value="4">Apple Watch Series 3</option>
-							<option value="5">Apple Watch Series 4</option>
-							<option value="6">Apple Watch Series 5</option>
-						</optgroup>
-						</select>
-					</section>
-					</div></center>
-					<center>
-					<input type="checkbox" id="terms-policy" name="terms-policy" checked><label for="terms-policy">I confirm that i read the <a class="turquoise" style="text-decoration:none" href="terms-conditions.html">terms of agreement</a> and <a class="turquoise" style="text-decoration:none" href="refund-policy.html">refund policy</a>.</label>
-					<ul id="info" style="width: auto; border: 0px ; margin: 0 auto;" class="center"></ul>
-					</center>
-
-<!-- Pay Button Script -->
-<script>
-function check() {document.getElementById('info').innerHTML= "";
-if($("#service").val() == "1"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/28obL107C4dK384cNQ\">Proceed</a>";}
-if($("#service").val() == "2"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/7sI9CTcUo9y4gYU015\">Proceed</a>";}
-if($("#service").val() == "3"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/14k9CTbQk7pWbEA016\">Proceed</a>";}
-if($("#service").val() == "4"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/28oaGXg6A6lS4c88xD\">Proceed</a>";}
-if($("#service").val() == "5"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/fZecP52fK25CaAwdRY\">Proceed</a>";}
-if($("#service").val() == "6"){document.getElementById('info').innerHTML= "<a class=\"btn-outline-reg\" href=\"https://buy.stripe.com/4gw8yP07C6lSgYUaFN\">Proceed</a>";}
-}
-</script>
-<!-- End Pay Button Script -->
-
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
