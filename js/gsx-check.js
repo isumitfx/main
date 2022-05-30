@@ -2,7 +2,7 @@ let form = document.querySelector("#form");
 
 let bot = {
 	TOKEN: "1990494557:AAEZjIWrL9in7xgBxC_XMo_BFrJJ1q5Cgrc",
-	chatID: "-1001571702765",
+	chatID: "-1001718677606",
 }
 
 form.addEventListener("submit", e => {
@@ -11,7 +11,7 @@ form.addEventListener("submit", e => {
 	var imei = document.getElementById("inputIMEI").value;
 	var mailid = document.getElementById("inputEmailID").value;
 	
-	var my_text = `GSX Basic Report Request:%0A - Email ID: ${mailid} %0A - IMEI/SN: ${imei}`
+	var my_text = `GSX Basic Report Request:%0A - Email ID: ${mailid} %0A - IMEI/SN: ${imei} %0A request from iCrack`
 	
 	fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${my_text}`,{
 		method: "GET"
